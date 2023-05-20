@@ -1,0 +1,365 @@
+Collecting data from input file...
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Performing admittance spectroscopy analysis on
+   temperature step range [(100, 250)] K...
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 10000.0Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[194.8, 1.235139, 0.7777320000000001, 0.015043172147001939]
+
+Here are final fit parameters:
+T0 = 191.09639469586196 +/- 2.697165626139834 K
+Cmin = 1.1948933169735418 +/- 0.03945688214210697 nF/cm^2
+L = Cmax-Cmin = 0.8038398611280354 +/- 0.07031218477109236 nF/cm^2
+k = 0.0701301795695095 +/- 0.014003596276457305 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+10000.0:  C(x) = ( 0.8038398611280354 ) / ( 1 + exp(-0.0701301795695095*(x - 191.09639469586196))) + 1.1948933169735418
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 7.27470241e+00  3.70976903e-02  2.07558139e-02 -2.96391294e-03]
+ [ 3.70976903e-02  1.55684555e-03 -2.33288081e-03  4.39306603e-04]
+ [ 2.07558139e-02 -2.33288081e-03  4.94380333e-03 -8.68716279e-04]
+ [-2.96391294e-03  4.39306603e-04 -8.68716279e-04  1.96100709e-04]]
+
+The correlation matrix is:
+[[ 1.          0.94020836  0.29519512 -0.2116537 ]
+ [ 0.94020836  1.         -0.0331789   0.03137098]
+ [ 0.29519512 -0.0331789   1.         -0.06203523]
+ [-0.2116537   0.03137098 -0.06203523  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 2.265567478044744
+Chi Squared Reduced: 0.755189159348248
+
+R Squared: 0.9955264174730966
+99.55264174730965% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 13894.955Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[194.8, 1.235139, 0.7777320000000001, 0.015043172147001939]
+
+Here are final fit parameters:
+T0 = 193.98843874552375 +/- 2.7276269545987875 K
+Cmin = 1.201588558309912 +/- 0.035313146101504114 nF/cm^2
+L = Cmax-Cmin = 0.7871619147914581 +/- 0.06821572143838961 nF/cm^2
+k = 0.07093928639755043 +/- 0.014109442791882646 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+13894.955:  C(x) = ( 0.7871619147914581 ) / ( 1 + exp(-0.07093928639755043*(x - 193.98843874552375))) + 1.201588558309912
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 7.43994880e+00  2.58335812e-02  4.37222888e-02 -6.86894980e-03]
+ [ 2.58335812e-02  1.24701829e-03 -1.95510780e-03  3.86277642e-04]
+ [ 4.37222888e-02 -1.95510780e-03  4.65338465e-03 -8.40716983e-04]
+ [-6.86894980e-03  3.86277642e-04 -8.40716983e-04  1.99076376e-04]]
+
+The correlation matrix is:
+[[ 1.          0.73155706  0.64094153 -0.48683353]
+ [ 0.73155706  1.         -0.02866066  0.02737724]
+ [ 0.64094153 -0.02866066  1.         -0.05958541]
+ [-0.48683353  0.02737724 -0.05958541  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 1.7312709662697088
+Chi Squared Reduced: 0.577090322089903
+
+R Squared: 0.9965728258504858
+99.65728258504858% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 19306.977Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[194.8, 1.235139, 0.7777320000000001, 0.015043172147001939]
+
+Here are final fit parameters:
+T0 = 196.84140426797538 +/- 2.8132387397339933 K
+Cmin = 1.207362092716991 +/- 0.03222916940815593 nF/cm^2
+L = Cmax-Cmin = 0.7710340351681402 +/- 0.06773431993441568 nF/cm^2
+k = 0.07133963501578298 +/- 0.014272359799156734 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+19306.977:  C(x) = ( 0.7710340351681402 ) / ( 1 + exp(-0.07133963501578298*(x - 196.84140426797538))) + 1.207362092716991
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 7.91431221e+00  1.78338070e-02  6.55702188e-02 -1.06595023e-02]
+ [ 1.78338070e-02  1.03871936e-03 -1.71017569e-03  3.48517705e-04]
+ [ 6.55702188e-02 -1.71017569e-03  4.58793810e-03 -8.38762544e-04]
+ [-1.06595023e-02  3.48517705e-04 -8.38762544e-04  2.03700254e-04]]
+
+The correlation matrix is:
+[[ 1.          0.55334367  0.96805015 -0.74686334]
+ [ 0.55334367  1.         -0.02524829  0.02441907]
+ [ 0.96805015 -0.02524829  1.         -0.05876832]
+ [-0.74686334  0.02441907 -0.05876832  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 1.2945346234799375
+Chi Squared Reduced: 0.4315115411599792
+
+R Squared: 0.9974590974214551
+99.74590974214551% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 26826.958Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[194.8, 1.235139, 0.7777320000000001, 0.015043172147001939]
+
+Here are final fit parameters:
+T0 = 199.91956015627244 +/- 2.8935410189435045 K
+Cmin = 1.2132367254030032 +/- 0.028871033885333616 nF/cm^2
+L = Cmax-Cmin = 0.7529225879169731 +/- 0.06675290452718653 nF/cm^2
+k = 0.07278297246059583 +/- 0.014594946598382976 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+26826.958:  C(x) = ( 0.7529225879169731 ) / ( 1 + exp(-0.07278297246059583*(x - 199.91956015627244))) + 1.2132367254030032
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 8.37257963e+00  1.10422537e-02  8.62503055e-02 -1.46747779e-02]
+ [ 1.10422537e-02  8.33536598e-04 -1.44024843e-03  3.08341642e-04]
+ [ 8.62503055e-02 -1.44024843e-03  4.45595026e-03 -8.35791586e-04]
+ [-1.46747779e-02  3.08341642e-04 -8.35791586e-04  2.13012466e-04]]
+
+The correlation matrix is:
+[[ 1.          0.38246825  1.29208319 -1.00546979]
+ [ 0.38246825  1.         -0.02157582  0.0211266 ]
+ [ 1.29208319 -0.02157582  1.         -0.05726582]
+ [-1.00546979  0.0211266  -0.05726582  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 1.0569083182184502
+Chi Squared Reduced: 0.3523027727394834
+
+R Squared: 0.997884616594673
+99.7884616594673% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 37275.937Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[212.44, 1.235139, 0.7777320000000001, 0.015043172147001939]
+
+Here are final fit parameters:
+T0 = 202.9230046334814 +/- 3.0654564728421536 K
+Cmin = 1.21672065343451 +/- 0.026923252187797453 nF/cm^2
+L = Cmax-Cmin = 0.7398588354792374 +/- 0.06878035238738993 nF/cm^2
+k = 0.07271294946275557 +/- 0.014827221624463888 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+37275.937:  C(x) = ( 0.7398588354792374 ) / ( 1 + exp(-0.07271294946275557*(x - 202.9230046334814))) + 1.21672065343451
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 9.39702339e+00  5.92533125e-03  1.12685346e-01 -1.90192684e-02]
+ [ 5.92533125e-03  7.24861508e-04 -1.33088732e-03  2.86061527e-04]
+ [ 1.12685346e-01 -1.33088732e-03  4.73073687e-03 -8.73415164e-04]
+ [-1.90192684e-02  2.86061527e-04 -8.73415164e-04  2.19846501e-04]]
+
+The correlation matrix is:
+[[ 1.          0.2200823   1.63833627 -1.28272639]
+ [ 0.2200823   1.         -0.01934982  0.019293  ]
+ [ 1.63833627 -0.01934982  1.         -0.05890619]
+ [-1.28272639  0.019293   -0.05890619  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 0.8265883928201377
+Chi Squared Reduced: 0.27552946427337927
+
+R Squared: 0.9983848748887858
+99.83848748887858% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 51794.747Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[212.44, 1.235139, 0.7777320000000001, 0.011250282077245771]
+
+Here are final fit parameters:
+T0 = 206.3302446698701 +/- 3.3161156154069498 K
+Cmin = 1.219870968971019 +/- 0.025240632421480863 nF/cm^2
+L = Cmax-Cmin = 0.7296741275595874 +/- 0.07292876059443774 nF/cm^2
+k = 0.0723020286096711 +/- 0.01512568242524305 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+51794.747:  C(x) = ( 0.7296741275595874 ) / ( 1 + exp(-0.0723020286096711*(x - 206.3302446698701))) + 1.219870968971019
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 1.09966228e+01  3.75702676e-04  1.50948891e-01 -2.47494248e-02]
+ [ 3.75702676e-04  6.37089525e-04 -1.26855070e-03  2.68599165e-04]
+ [ 1.50948891e-01 -1.26855070e-03  5.31860412e-03 -9.46531736e-04]
+ [-2.47494248e-02  2.68599165e-04 -9.46531736e-04  2.28786269e-04]]
+
+The correlation matrix is:
+[[ 1.          0.01488484  2.06981292 -1.63625178]
+ [ 0.01488484  1.         -0.01739438  0.01775782]
+ [ 2.06981292 -0.01739438  1.         -0.06257779]
+ [-1.63625178  0.01775782 -0.06257779  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 0.5895533611124714
+Chi Squared Reduced: 0.19651778703749045
+
+R Squared: 0.9988579732160379
+99.88579732160379% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 71968.567Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[212.44, 1.235139, 0.7777320000000001, 0.014927677543186184]
+
+Here are final fit parameters:
+T0 = 209.84604229539943 +/- 3.665525643140834 K
+Cmin = 1.2232059757221672 +/- 0.023910024290098433 nF/cm^2
+L = Cmax-Cmin = 0.7204114678314698 +/- 0.07946190961516496 nF/cm^2
+k = 0.07167865378308477 +/- 0.015595128977801662 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+71968.567:  C(x) = ( 0.7204114678314698 ) / ( 1 + exp(-0.07167865378308477*(x - 209.84604229539943))) + 1.2232059757221672
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 1.34360782e+01 -5.80411447e-03  2.05890169e-01 -3.24365208e-02]
+ [-5.80411447e-03  5.71689262e-04 -1.25904662e-03  2.58788944e-04]
+ [ 2.05890169e-01 -1.25904662e-03  6.31419508e-03 -1.06940651e-03]
+ [-3.24365208e-02  2.58788944e-04 -1.06940651e-03  2.43208048e-04]]
+
+The correlation matrix is:
+[[ 1.         -0.24274816  2.59105488 -2.0799136 ]
+ [-0.24274816  1.         -0.01584466  0.01659422]
+ [ 2.59105488 -0.01584466  1.         -0.06857311]
+ [-2.0799136   0.01659422 -0.06857311  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 0.4000514300107324
+Chi Squared Reduced: 0.13335047667024413
+
+R Squared: 0.9992057885414982
+99.92057885414982% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+Fitting capacitance vs temperature data for frequency = 100000.0Hz
+-------------------------------------------------------------------
+
+Here is the initial guess array for [T0,Cmin,L,k]
+[212.44, 1.235139, 0.7777320000000001, 0.014927677543186184]
+
+Here are final fit parameters:
+T0 = 213.7393702877498 +/- 4.19923637357309 K
+Cmin = 1.2258857467682647 +/- 0.02278077559665566 nF/cm^2
+L = Cmax-Cmin = 0.7136391418325525 +/- 0.09014972957020975 nF/cm^2
+k = 0.07075741749195337 +/- 0.016269492334166427 K
+
+Put this equation in gnuplot etc. Using x for temperature in K
+100000.0:  C(x) = ( 0.7136391418325525 ) / ( 1 + exp(-0.07075741749195337*(x - 213.7393702877498))) + 1.2258857467682647
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 1.76335861e+01 -1.40644983e-02  2.98047859e-01 -4.41787100e-02]
+ [-1.40644983e-02  5.18963737e-04 -1.31084550e-03  2.54801326e-04]
+ [ 2.98047859e-01 -1.31084550e-03  8.12697374e-03 -1.27843464e-03]
+ [-4.41787100e-02  2.54801326e-04 -1.27843464e-03  2.64696381e-04]]
+
+The correlation matrix is:
+[[ 1.         -0.61738452  3.30614257 -2.71543261]
+ [-0.61738452  1.         -0.01454076  0.0156613 ]
+ [ 3.30614257 -0.01454076  1.         -0.07857864]
+ [-2.71543261  0.0156613  -0.07857864  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 0.22879487295563253
+Chi Squared Reduced: 0.0762649576518775
+
+R Squared: 0.9995291617202501
+99.95291617202501% of the variation in y can be explained by the model
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Performing arrhenius fit with equation y= (b-b0) + m(x-x0)
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+m = -3795.216859553188 +/- 600.9986088499799
+b = -0.5023589766970387 +/- 0.10429860009225332
+x0 = 0.004961090205981903
+b0 = -0.25194861479581265
+
+Arrhenius fit parameters
+Ed = 0.32704648480881177 +/- -0.05179005302545804
+nu0 = 1.170373e+08 +/- 1.220682e+07
+
+Put this equation in gnuplot etc. Using x for 1/temperature in 1/K etc
+f(x) = ( -0.5023589766970387 - -0.25194861479581265 ) + -3795.216859553188 * ( x - 0.004961090205981903 )
+
+-------------------------------------------------------------------
+
+The covariance matrix is:
+[[ 1.08781980e-02 -8.16850881e+00]
+ [-8.16850881e+00  3.61199328e+05]]
+
+The correlation matrix is:
+[[ 1.         -0.01359156]
+ [-0.01359156  1.        ]]
+You want the off-diagonal elements to be ~0, ~1 means those two fit parameters are highly coupled.
+If they are highly coupled, you may consider adjusting your model.
+
+Chi Squared: 2.231907375622694
+Chi Squared Reduced: 0.3719845626037823
+
+R Squared: 99.92978386687983% of the variation in y can be explained by the model
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+Outputting data to: /path/to/example_of_code/admittance_spectroscopy/data/CT_out.tsv
