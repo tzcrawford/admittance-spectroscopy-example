@@ -84,7 +84,7 @@ set style line 15 lw 3 pt 2 ps 3 lc rgb '#C0C0C0'     # light gray
 f(x)=`grep -P "^f\(x\) = " $logfile | sed "s/f(x) = //g"`
 
 plot \
-"`echo $arrfile`" using 5:7:6:8 title "100-250K" ls 99 w xyerrorbars, \
+"`echo $arrfile`" using 5:7:6:8 title "100-250K" ls 1 w xyerrorbars, \
 f(x) w l ls 1 lw 2 notitle
 
 EOF
