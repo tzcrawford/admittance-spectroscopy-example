@@ -11,7 +11,8 @@ $(which gnuplot) -p <<EOF
 #set term qt                                ###Qt API terminal
 #set term x11                               ###Xterm, default for Xwindow systems
 #set term png                               ###png terminal, Best for immediately outputting to a file
-set term png transparent truecolor background rgb '#000000' size 1600,1200 font "Liberation Mono:style=Bold,40" ###png terminal with transparent background but white on any opaque areas. Size 800x600 pixels.
+#set term png transparent truecolor background rgb '#000000' size 1600,1200 font "Liberation Mono:style=Bold,40" ###png terminal with transparent background but white on any opaque areas. Size 800x600 pixels.
+set term png truecolor background rgb '#FFFFFF' size 1600,1200 font "Liberation Mono:style=Bold,40"
 #set term svg enhanced size 500,500         ###svg terminal 5in by 5in
 
 ###Output Options
@@ -26,21 +27,21 @@ set datafile separator "\t"                #for plotting data from a tab separat
 ###Legend options
 #unset key                                  #disables legend 
 set key top left Left reverse #enables legend and where
-#set key box lc rgb '#FFFFFF'                #sets box around legend
+#set key box lc rgb '#000000'                #sets box around legend
 #set key opaque                              #sets key on opaque background such that plots don't draw over it
-set key tc rgb '#FFFFFF'                    #sets color of writing within key
+set key tc rgb '#000000'                    #sets color of writing within key
 set key font ",32"                         #legend font and size
 #set key spacing 1.5                        #sets how far apart the lines in the key are vertically
 set key samplen 1                          #sets how wide the key samples are
 
-set border lw 4 lc rgb '#FFFFFF'                 #sets plot border a specific color
+set border lw 4 lc rgb '#000000'                 #sets plot border a specific color
 
 
 
 ###Primary Graph Options
-set title "Admittance Data" tc rgb '#FFFFFF'                           #title
-set xlabel "Sample Temperature (K)" tc rgb '#FFFFFF'             #x axis label and color
-set ylabel "Capacitance (nF/cm^2)" tc rgb '#FFFFFF'             #y axis label and color
+set title "Admittance Data" tc rgb '#000000'                           #title
+set xlabel "Sample Temperature (K)" tc rgb '#000000'             #x axis label and color
+set ylabel "Capacitance (nF/cm^2)" tc rgb '#000000'             #y axis label and color
 #set xrange [100:250]                     #x axis range
 set xrange [100:370]                     #x axis range
 #set yrange [2.2:3.6]                           #y axis range
@@ -90,7 +91,7 @@ C8(x)=`grep -P "^71968.567:  C" $logfile | sed "s/71968.567:  C(x) = //g"`
 C9(x)=`grep -P "^100000.0:  C"  $logfile | sed "s/100000.0:  C(x) = //g"`
 
 plot \
-"<(grep 10000\.0           $maindir/ct.dat)" using 2:4 title "10.000 kHz" ls 99 w p, \
+"<(grep 10000\.0           $maindir/ct.dat)" using 2:4 title "10.000 kHz" ls 1 w p, \
 "<(grep 13894.954943731389 $maindir/ct.dat)" using 2:4 title "13.895 kHz" ls 2 w p, \
 "<(grep 19306.977288832495 $maindir/ct.dat)" using 2:4 title "19.307 kHz" ls 4 w p, \
 "<(grep 26826.957952797275 $maindir/ct.dat)" using 2:4 title "26.827 kHz" ls 5 w p, \

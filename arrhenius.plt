@@ -13,7 +13,8 @@ $(which gnuplot) -p <<EOF
 #set term qt                                ###Qt API terminal
 #set term x11                               ###Xterm, default for Xwindow systems
 #set term png                               ###png terminal, Best for immediately outputting to a file
-set term png transparent truecolor background rgb '#000000' size 1600,1200 font "Liberation Mono:style=Bold,36" ###png terminal with transparent background but white on any opaque areas. Size 800x600 pixels.
+#set term png transparent truecolor background rgb '#000000' size 1600,1200 font "Liberation Mono:style=Bold,36" ###png terminal with transparent background but white on any opaque areas. Size 800x600 pixels.
+set term png truecolor background rgb '#FFFFFF' size 1600,1200 font "Liberation Mono:style=Bold,36"
 #set term svg enhanced size 500,500         ###svg terminal 5in by 5in
 
 ###Output Options
@@ -28,21 +29,21 @@ set datafile separator "\t"                #for plotting data from a tab separat
 ###Legend options
 #unset key                                  #disables legend 
 set key top left Left reverse #enables legend and where
-#set key box lc rgb '#FFFFFF'                #sets box around legend
+#set key box lc rgb '#000000'                #sets box around legend
 #set key opaque                              #sets key on opaque background such that plots don't draw over it
-set key tc rgb '#FFFFFF'                    #sets color of writing within key
+set key tc rgb '#000000'                    #sets color of writing within key
 set key font ",32"                         #legend font and size
 #set key spacing 1.5                        #sets how far apart the lines in the key are vertically
 set key samplen 1                          #sets how wide the key samples are
 
-set border lw 4 lc rgb '#FFFFFF'                 #sets plot border a specific color
+set border lw 4 lc rgb '#000000'                 #sets plot border a specific color
 
 
 
 ###Primary Graph Options
-set title "Arrhenius plot" tc rgb '#FFFFFF'                           #title
-set ylabel "ln(f/T_0^2) [ln(Hz/K^2)]" tc rgb '#FFFFFF'
-set xlabel "1/T [1/K]" tc rgb '#FFFFFF'
+set title "Arrhenius plot" tc rgb '#000000'                           #title
+set ylabel "ln(f/T_0^2) [ln(Hz/K^2)]" tc rgb '#000000'
+set xlabel "1/T [1/K]" tc rgb '#000000'
 #set xrange [4.5e-3:5.5e-3]                     #x axis range
 set xrange [0:5.5e-3]                     #x axis range
 #set yrange [2.2:3.6]                           #y axis range
@@ -84,6 +85,6 @@ f(x)=`grep -P "^f\(x\) = " $logfile | sed "s/f(x) = //g"`
 
 plot \
 "`echo $arrfile`" using 5:7:6:8 title "100-250K" ls 99 w xyerrorbars, \
-f(x) w l ls 99 lw 2 notitle
+f(x) w l ls 1 lw 2 notitle
 
 EOF
